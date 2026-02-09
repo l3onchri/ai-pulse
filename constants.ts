@@ -97,11 +97,11 @@ export const LATEST_DROPS: NewsItem[] = [
 ];
 
 export const LIVE_FEED: LiveUpdateItem[] = [
-  { id: 'l1', text: "OpenAI: GPT-5 'Orion' supera ogni benchmark", timestamp: "15m", type: 'critical', color: "#EF4444" }, // Red (Most recent)
-  { id: 'l2', text: "Google DeepMind: Robot che imparano guardando YouTube", timestamp: "42m", type: 'major', color: "#F59E0B" }, // Yellow/Orange (2nd most recent)
-  { id: 'l3', text: "NVIDIA svela il chip H200 per l'inferenza AI", timestamp: "2h", type: 'major', color: "#22C55E" }, // Green
-  { id: 'l4', text: "Meta rilascia Llama 4 Open Source", timestamp: "3h", type: 'major', color: "#22C55E" }, // Green
-  { id: 'l5', text: "AI Act: L'UE finalizza la regolamentazione", timestamp: "5h", type: 'normal', color: "#22C55E" }, // Green
+  { id: 'l1', text: "OpenAI: GPT-5 'Orion' supera ogni benchmark", timestamp: "15m", type: 'critical', color: "#EF4444", source: "TechCrunch" },
+  { id: 'l2', text: "Google DeepMind: Robot che imparano guardando YouTube", timestamp: "42m", type: 'major', color: "#F59E0B", source: "The Verge" },
+  { id: 'l3', text: "NVIDIA svela il chip H200 per l'inferenza AI", timestamp: "2h", type: 'major', color: "#22C55E", source: "Reuters" },
+  { id: 'l4', text: "Meta rilascia Llama 4 Open Source", timestamp: "3h", type: 'major', color: "#22C55E", source: "Wired" },
+  { id: 'l5', text: "AI Act: L'UE finalizza la regolamentazione", timestamp: "5h", type: 'normal', color: "#22C55E", source: "Politico" },
 ];
 
 // Fallback for types not used but imported elsewhere

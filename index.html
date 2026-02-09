@@ -128,6 +128,29 @@
       .glow-line {
         box-shadow: 0 0 15px rgba(232, 200, 74, 0.8);
       }
+
+      /* Slide-in from right (ArticleDetail) */
+      @keyframes slide-in-right {
+        from { transform: translateX(100%); }
+        to { transform: translateX(0); }
+      }
+      .animate-slide-in-right {
+        animation: slide-in-right 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      /* Fade overlay */
+      @keyframes fade-overlay {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .animate-fade-overlay {
+        animation: fade-overlay 0.25s ease-out forwards;
+      }
+
+      /* Spin slow for RefreshCw icon */
+      .animate-spin-slow {
+        animation: spin-slow 4s linear infinite;
+      }
     </style>
     <script>
       tailwind.config = {

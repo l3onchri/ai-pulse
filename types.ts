@@ -34,7 +34,8 @@ export interface LiveUpdateItem {
   text: string;
   timestamp: string;
   type: 'critical' | 'major' | 'normal';
-  color?: string; // Hex or tailwind class for source color
+  color?: string;
+  source?: string;
 }
 
 export enum AppState {
@@ -44,3 +45,6 @@ export enum AppState {
   ERROR = 'ERROR',
   EMPTY = 'EMPTY',
 }
+
+export type PageId = 'dashboard' | 'analytics' | 'sources' | 'settings';
+export type SidebarPanel = 'preferences' | 'history' | 'saved' | null;
